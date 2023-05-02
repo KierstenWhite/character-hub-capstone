@@ -1,0 +1,9 @@
+#footer {
+    border: 2px solid rgb(164, 0, 197);
+    background-color: pink;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    margin-top: 40px;
+}

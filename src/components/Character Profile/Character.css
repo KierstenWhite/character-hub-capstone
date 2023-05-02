@@ -1,0 +1,15 @@
+.name_fields {
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.profile_dressing_fields {
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+}
