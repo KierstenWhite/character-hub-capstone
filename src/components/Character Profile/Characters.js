@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Character.css"
-import { MyCharacterList } from "./CharacterHome";
+import { CharacterHomeList } from "./CharacterHomeList";
 import { GetCharacterInformation } from "./CharacterAPI";
 
 export const Characters = () => {
@@ -13,22 +13,22 @@ export const Characters = () => {
             GetCharacterInformation()
             .then((characterArray) => {
                 setCharacters(characterArray)
+
             });
         },
         []
     );
-
     return (
         <>
             <article className="characterHome">
                 <h2>My Characters</h2>
-                    {characters.map((characterObject) => (
-                        <MyCharacterList
-                        key={`character--${characterObject.id}`}
+                    {characters.map((character) => 
+                        <CharacterHomeList 
+                        key={`character--${character.id}`}
                         currentUser={currentUserObject}
-                        characterObject={characterObject}
+                        character={character}
                         />
-                    ))}
+                    )}
             </article>
         </>
     )
