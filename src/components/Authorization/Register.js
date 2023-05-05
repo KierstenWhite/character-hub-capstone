@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import "./Login.css"
+import { Button, Form, Header, Input, TextArea } from "semantic-ui-react"
+import "./Register.css"
 
-export const Register = (props) => {
+export const Register = () => {
     const [user, setUser] = useState({
         email: "",
         preferredName: "",
@@ -12,7 +13,7 @@ export const Register = (props) => {
         location: "",
         status: "",
         bio: "",
-        memberSince: ""
+        memberSince: new Date()
     })
     let navigate = useNavigate()
 
@@ -60,70 +61,90 @@ export const Register = (props) => {
     }
 
     return (
-        <main style={{ textAlign: "center" }}>
-            <form className="ui form" onSubmit={handleRegister}>
-                <h1 className="form_header">Create a new Character Hub Account</h1>
-                <div className="fields">
-                <fieldset className="field">
-                    <label htmlFor="email"> Email address </label>
-                    <input onChange={updateuser}
-                        type="email" id="email" className="form-control"
-                        placeholder="Email address" required />
-                </fieldset>
-                <fieldset className="field">
-                    <label htmlFor="preferredName"> Preferred Name </label>
-                    <input onChange={updateuser}
-                           type="text" id="preferredName" className="form-control"
-                           placeholder="Enter your name" required autoFocus />
-                </fieldset>
-                <fieldset className="field">
-                    <label htmlFor="username"> Username (This cannot be changed) </label>
-                    <input onChange={updateuser}
-                           type="text" id="username" className="form-control"
-                           placeholder="Enter your a unique username" required autoFocus />
-                </fieldset>
-                <fieldset className="field">
-                    <label htmlFor="userImage"> Profile Image </label>
-                    <input onChange={updateuser}
-                           type="link" id="userImage" className="form-control"
-                           placeholder="Link to an image" required autoFocus />
-                </fieldset>
-                <fieldset className="field">
-                    <label htmlFor="age"> Age </label>
-                    <input onChange={updateuser}
-                           type="number" id="age" className="form-control"
-                           placeholder="Enter your age" required autoFocus />
-                </fieldset>
-                <fieldset className="field">
-                    <label htmlFor="location"> Location </label>
-                    <input onChange={updateuser}
-                           type="text" id="location" className="form-control"
-                           placeholder="Enter your location" required autoFocus />
-                </fieldset>
-                <fieldset className="field">
-                    <label htmlFor="status"> Update your status </label>
-                    <input onChange={updateuser}
-                           type="text" id="status" className="form-control"
-                           placeholder="Enter your current status" required autoFocus />
-                </fieldset>
-                <fieldset className="field">
-                    <label htmlFor="bio"> Bio - Tell us about yourself! </label>
-                    <input onChange={updateuser}
-                           type="text" id="bio" className="form-control"
-                           placeholder="Enter your bio" required autoFocus />
-                </fieldset>
-                <fieldset className="field">
-                    <label htmlFor="memberSince"> Today's Date </label>
-                    <input onChange={updateuser}
-                           type="date" id="memberSince" className="form-control"
-                           placeholder="05/01/2023" required autoFocus />
-                </fieldset>
-                <fieldset>
-                    <button type="submit" className="ui button"> Register </button>
-                </fieldset>
-                </div>
-            </form>
-        </main>
+        <>
+        <Header id="registrationFormHeader" as="h1">
+            Create a New Account
+            <Header.Subheader>
+                Join a community of other writers and creators.
+            </Header.Subheader>
+        </Header>
+            <Form className="ui form" id="registrationForm" onSubmit={handleRegister}>
+                <Form.Group widths='equal'>
+                    <Form.Field
+                    control={Input}
+                    onChange={updateuser}
+                    label="Email"
+                    htmlFor="email"
+                    placeholder="Email"
+                    id="email"
+                    required/>
+                     <Form.Field
+                    control={Input}
+                    onChange={updateuser}
+                    label="Username (this cannot be changed)"
+                    htmlFor="username"
+                    placeholder="Username"
+                    id="username"
+                    required/>
+                    <Form.Field
+                    control={Input}
+                    onChange={updateuser}
+                    label="Preferred Name"
+                    htmlFor="preferredName"
+                    placeholder="Preferred Name"
+                    id="preferredName"
+                    required/>
+                </Form.Group>
+                <Form.Group widths='equal'>
+                <Form.Field
+                    control={Input}
+                    onChange={updateuser}
+                    label="Age"
+                    htmlFor="age"
+                    placeholder="Age"
+                    id="age"
+                    />
+                    <Form.Field
+                    control={Input}
+                    onChange={updateuser}
+                    label="Location"
+                    htmlFor="location"
+                    placeholder="Location"
+                    id="location"
+                    />
+                    <Form.Field
+                    control={Input}
+                    onChange={updateuser}
+                    label="Profile Image"
+                    htmlFor="userImage"
+                    placeholder="Add a link to your profile image"
+                    id="userImage"
+                    />
+                </Form.Group>
+                <Header as="h3" id="registrationForm">
+                    Additional Information
+                </Header>
+                <Form.Group>
+                    <Form.Field
+                    control={Input}
+                    onChange={updateuser}
+                    label="Status"
+                    htmlFor="status"
+                    placeholder="Status"
+                    id="status"
+                    />
+                </Form.Group>
+                <Form.Field
+                    control={TextArea}
+                    onChange={updateuser}
+                    label="Bio"
+                    htmlFor="bio"
+                    placeholder="Tell us more about you..."
+                    id="bio"
+                    />
+                <Form.Field control={Button} id="registrationButton">Register New Account</Form.Field>
+            </Form>
+        </>
     )
 }
 

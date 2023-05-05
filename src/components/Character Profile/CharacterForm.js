@@ -81,7 +81,7 @@ export const AddANewCharacterForm = () => {
         hobbies: character.hobbies,
         characterNarrative: character.characterNarrative,
         relationshipNarrative: character.relationshipNarrative,
-        dateCreated: character.dateCreated
+        dateCreated: new Date()
     };
     
     return GetNewCharacterFormAndSend(profileToSendToAPI).then(() => {

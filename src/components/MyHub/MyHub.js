@@ -1,40 +1,33 @@
 import { Link } from "react-router-dom"
 import "./MyHub.css"
+import { Button, Card, Image } from "semantic-ui-react"
 
 export const MyHubPage = () => {
     return (
         <>
-        <section className="ui centered cards" id="MyHubCards">
-            <div className="ui pink card">
-                <a className="image" href="#">
-                    <img src="https://i.imgur.com/FYHgGaC.png" />
-                </a>
-            <div className="content">
-                <a className="header" href="#">Have an idea for a new character? Start here!</a>
-                <button className="ui inverted pink button"><Link className="navbar_link" to="/add_a_new_character_form">Add a New Character</Link></button>
-            </div>
-            </div>
-
-            <div className="ui green card">
-                <a className="image" href="#">
-                    <img src="https://i.imgur.com/XLLbPJw.png" />
-                </a>
-            <div className="content" id="cardContent">
-                <a className="header" href="#">Want to make some changes to existing characters?</a>
-                <button className="ui inverted green button"><Link className="navbar_link" to="/character_home">Character Home</Link></button>
-            </div>
-            </div>
-
-            <div className="ui yellow card">
-                <a className="image" href="#">
-                    <img src="https://i.imgur.com/4fqic2V.png" />
-                </a>
-            <div className="content">
-                <a className="header" href="#">Need some help getting started?</a>
-                <button className="ui inverted yellow button"><Link className="navbar_link" to="/writing_resources">Writing Resources</Link></button>
-            </div>
-            </div>
-            </section>
+        <Card.Group id="myHubCardGroup">
+        <Card>
+            <Image src="https://i.imgur.com/QSwv9Gy.png" />
+            <Card.Content>
+                <Card.Description>Visit all of your exisiting characters, make edits, and share.</Card.Description>
+                <Link className="navbar_link" to="/character_home"><Button id="myHubButton">Character Home</Button></Link>
+            </Card.Content>
+        </Card>
+        <Card>
+            <Image src="https://i.imgur.com/1LD3CaX.png" />
+            <Card.Content>
+                <Card.Description>Have an idea for a new character? Start here.</Card.Description>
+                <Link className="navbar_link" to="/add_a_new_character_form"><Button id="myHubButton">Add a New Character</Button></Link>
+            </Card.Content>
+        </Card>
+        <Card>
+            <Image src="https://i.imgur.com/EnMd1mO.png" />
+            <Card.Content>
+                <Card.Description>Our crowd sourced Writing Resources tab will help anyone whether you are a novice or bestseller.</Card.Description>
+                <Link className="navbar_link" to="/writing_resources"><Button id="myHubButton">Writing Resources</Button></Link>
+            </Card.Content>
+        </Card>
+        </Card.Group>
         </>
     )
 }

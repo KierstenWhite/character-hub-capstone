@@ -9,6 +9,7 @@ import { Footer } from './components/Footer/Footer';
 
 function CharacterHub() {
   return (
+   
     <Routes>
       <Route>
           <Route path="/login" element={<Login />} />
@@ -20,12 +21,13 @@ function CharacterHub() {
               <>
               <NavBar />
               <ApplicationViews />
-              
+              <Footer />
               </>
             </Authorized>
           } />
       </Route>
     </Routes>
+
   )
     
     
@@ -36,4 +38,3 @@ function CharacterHub() {
 export default CharacterHub;
 
 
-{/* <Footer /> */}

@@ -1,0 +1,10 @@
+#loginPageHeader, #headerSegment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#loginButton {
+    background-color: #DA96FF;
+}

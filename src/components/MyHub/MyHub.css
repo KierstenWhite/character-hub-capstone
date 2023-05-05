@@ -1,8 +1,10 @@
-#MyHubCards {
-    margin: 5px;
+#myHubCardGroup {
+    display: flex;
+    justify-content: center;
+    padding: 75px;
 }
 
-#cardContent {
-    padding: 25px;
-    
+#myHubButton {
+    background-color: #DA96FF;
+
 }

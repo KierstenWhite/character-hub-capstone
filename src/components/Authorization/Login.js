@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
+import { Button, Form, Header, Input, Segment, TextArea } from "semantic-ui-react"
 import "./Login.css"
 
 export const Login = () => {
@@ -19,7 +20,7 @@ export const Login = () => {
                         id: user.id,
                     }))
 
-                    navigate("/")
+                    navigate("/home")
                 }
                 else {
                     window.alert("Invalid login")
@@ -28,32 +29,26 @@ export const Login = () => {
     }
 
     return (
-        <main className="container--login">
-            <section>
-                <form className="ui form" onSubmit={handleLogin}>
-                    <h1>Character Hub</h1>
-                    <h2>“Characters are not created by writers. They pre-exist and have to be found.” - Elizabeth Bowen</h2>
-                    <h3>Please login</h3>
-                    <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
-                        <input type="email"
-                            value={email}
-                            onChange={evt => set(evt.target.value)}
-                            className="ui form"
-                            placeholder="kierstenswhite@gmail.com"
-                            required autoFocus />
-                    </fieldset>
-                    <fieldset>
-                        <button class ="ui button" type="submit">
-                            Start Creating
-                        </button>
-                    </fieldset>
-                </form>
-            </section>
-            <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
-            </section>
-        </main>
+        <>
+        <Segment id="headerSegment">
+        <img src="https://i.imgur.com/z7TY6qJ.png" alt="Character Hub Logo" id="characterHubLogo"/>
+        </Segment>
+        <Header id="loginPageHeader" as="h1">
+            <Header.Subheader>
+            “Characters are not created by writers. They pre-exist and have to be found.” - Elizabeth Bowen
+            </Header.Subheader>
+        </Header>
+            <Form onSubmit={handleLogin}>
+                <Form.Field
+                control={Input}
+                onChange={evt => set(evt.target.value)}
+                label="Email"
+                placeholder="kierstenswhite@gmail.com"
+                required autoFocus />
+            <Form.Field control={Button} id="loginButton">Login</Form.Field>
+            <Link to="/register">Not a member yet?</Link>
+            </Form>
+        </>
     )
 }
 
