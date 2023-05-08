@@ -4,7 +4,7 @@ import { AddANewCharacterForm } from "../Character Profile/CharacterForm"
 import { Characters } from "../Character Profile/Characters"
 import { IndividualCharacterProfile } from "../Character Profile/IndividualCharacterProfile"
 import { EditCharacterForm } from "../Character Profile/EditCharacterForm"
-import { Home } from "../../Home/Home"
+import { Home } from "../Home/Home"
 
 export const ApplicationViews = () => {
     return (

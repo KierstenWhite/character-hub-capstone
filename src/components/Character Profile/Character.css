@@ -1,15 +1,11 @@
-.name_fields {
-    display: flex;
-    flex-basis: auto;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 10px;
+#addNewCharacterForm {
+    font-size: 109%;
 }
 
-.profile_dressing_fields {
-    display: flex;
-    flex-basis: auto;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 10px;
+#submit, #editProfileButton  {
+    background-color: #DA96FF;
+}
+
+#profileDeleteButton {
+    background-color: #FF70CD;
 }
