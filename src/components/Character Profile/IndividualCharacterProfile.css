@@ -1,0 +1,70 @@
+#individualProfileHeader {
+    font-size: 50px;
+}
+
+#profileDeleteButton {
+    background-color: #FF70CD;
+    color: black;
+    font-size: 15px;
+    margin: 5px 0 75px;
+}
+
+#editProfileButton {
+    background-color: #ffe561;
+    color: black;
+    font-size: 15px;
+    margin: 5px 0 75px 15px;
+}
+
+#polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;  
+}
+
+#characterProfileQuote {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#profileSidebar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #B8FFC7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(161, 255, 197, 0.782);;
+}
+
+#profileSidebarHeader {
+    margin: 10px;
+    font-size: 20px;
+}
+
+#profileMainSegment {
+    margin: 10px;
+}
+
+#sidebarSegment, #profileMainSegment {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/* #fullGrid {
+    background-color: #f9efff;
+} */
+
+#aboutSegment, #etymologySegment, #relationshipSegment, #physicalDescriptionSegment {
+    background-color: #ffc6eb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(252, 185, 255, 0.782);
+}
+
+p {
+    font-size: 15px;
+}
+
+/*Accepts line breaks from form entries and prints them on the page*/
+#characterNarrativeSection {
+    white-space: pre-line;
+}

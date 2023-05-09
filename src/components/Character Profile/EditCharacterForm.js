@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { GetIndividualCharacterProfile, GetProfileAndReplace } from "./CharacterAPI";
 import { Button, Divider, Form, Header, Input, Segment, TextArea } from "semantic-ui-react";
+import { ColorRandomizer } from "./ColorRandomizer";
+import { CharacterTraitRandomizer } from "./CharacterTraitRandomizer";
 
 export const EditCharacterForm = () => {
     const [character, editCharacter] = useState({
@@ -264,8 +266,10 @@ export const EditCharacterForm = () => {
                 <Header as="h3">
                         Physical Details
                     </Header>
-                <Form.Group widths="equal" id="physicalDetails">
+                <Form.Group id="physicalDetailsOne">
+                    <Form.Field>{ColorRandomizer()}</Form.Field>
                     <Form.Field
+                    width={4}
                     control={Input}
                     onChange={(evt) => {
                     const copy = { ...character};
@@ -277,6 +281,7 @@ export const EditCharacterForm = () => {
                     id="hairColor"
                     />
                     <Form.Field
+                    width={4}
                     control={Input}
                     onChange={(evt) => {
                     const copy = { ...character};
@@ -287,6 +292,8 @@ export const EditCharacterForm = () => {
                     value={character.eyeColor}
                     id="eyeColor"
                     />
+                    </Form.Group>
+                    <Form.Group widths="equal" id="physicalDetailsTwo">
                     <Form.Field
                     control={Input}
                     onChange={(evt) => {
@@ -335,8 +342,9 @@ export const EditCharacterForm = () => {
                     <Header as="h3">
                         Personality
                     </Header>
-                <Form.Group widths="equal" id="personalityDetails">
+                <Form.Group id="personalityDetailsOne">
                     <Form.Field
+                    width={6}
                     control={Input}
                     onChange={(evt) => {
                     const copy = { ...character};
@@ -347,6 +355,9 @@ export const EditCharacterForm = () => {
                     value={character.characterTraits}
                     id="characterTraits"
                     />
+                    <Form.Field>{CharacterTraitRandomizer()}</Form.Field>
+                    </Form.Group>
+                    <Form.Group widths="equal" id="personalityDetails">
                     <Form.Field
                     control={Input}
                     onChange={(evt) => {

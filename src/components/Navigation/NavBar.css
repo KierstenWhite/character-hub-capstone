@@ -1,9 +1,21 @@
 #navBarLogo {
-    width: 17%;
-    height: auto;
+    width: auto;
+    height: 75%;
     margin: 0.3%;
 }
 
 #navbar {
-    background-color: #f8eaff;
+    background-color: #da96ff;
+    height: 80px;
+    align-items: center;
+}
+
+.navbar_link {
+    color: #121212;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.navbar_link:hover {
+    color: #620097;
 }

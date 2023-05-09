@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./Character.css"
 import { CharacterHomeList } from "./CharacterHomeList";
 import { GetCharacterInformation } from "./CharacterAPI";
+import { Button, Card, Header, Image } from "semantic-ui-react"
 
 export const Characters = () => {
     const [characters, setCharacters] = useState([]);
@@ -20,8 +21,8 @@ export const Characters = () => {
     );
     return (
         <>
-            <article className="characterHome">
-                <h2>My Characters</h2>
+        <Header as="h2" id="characterHomeHeader">My Characters</Header>
+            <Card.Group id="characterHomePage" itemsPerRow={6}>
                     {characters.map((character) => 
                         <CharacterHomeList 
                         key={`character--${character.id}`}
@@ -29,7 +30,7 @@ export const Characters = () => {
                         character={character}
                         />
                     )}
-            </article>
+            </Card.Group>
         </>
     )
 }

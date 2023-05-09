@@ -5,6 +5,22 @@
     flex-wrap: wrap;
 }
 
-#loginButton {
+#loginButton, #headerSegment {
     background-color: #DA96FF;
+}
+
+#l
+
+#loginForm {
+    font-size: 120%;
+    text-align: center;
+}
+
+#subheader {
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.form-field {
+    align-items: center;
 }

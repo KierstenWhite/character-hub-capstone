@@ -5,6 +5,7 @@ import { Characters } from "../Character Profile/Characters"
 import { IndividualCharacterProfile } from "../Character Profile/IndividualCharacterProfile"
 import { EditCharacterForm } from "../Character Profile/EditCharacterForm"
 import { Home } from "../Home/Home"
+import { EditUserProfile } from "../Profile/EditUserProfile"
 
 export const ApplicationViews = () => {
     return (
@@ -20,7 +21,8 @@ export const ApplicationViews = () => {
                 <Route path="character_home" element={<Characters />} />
                 <Route path="characters/:characterId" element={<IndividualCharacterProfile/>} />
                 <Route path="editCharacters/:characterId" element={<EditCharacterForm />} />
-            </Route>
+                <Route path="profile" element={ <EditUserProfile/>} />
+             </Route>
         </Routes>
 
     )

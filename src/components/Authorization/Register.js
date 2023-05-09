@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { Button, Form, Header, Input, TextArea } from "semantic-ui-react"
+import { Button, Form, Header, Input, Segment, TextArea } from "semantic-ui-react"
 import "./Register.css"
 
 export const Register = () => {
@@ -62,7 +62,13 @@ export const Register = () => {
 
     return (
         <>
+        <Segment id="headerSegment">
+        <img src="https://i.imgur.com/QoFHnAR.png" alt="Character Hub Logo" id="characterHubLogo"/>
+        </Segment>
         <Header id="registrationFormHeader" as="h1">
+            <Header.Subheader id="registrationQuote">
+            <img src="https://i.imgur.com/sTu4G22.png" id="registrationQuoteImage"/>
+            </Header.Subheader>
             Create a New Account
             <Header.Subheader>
                 Join a community of other writers and creators.

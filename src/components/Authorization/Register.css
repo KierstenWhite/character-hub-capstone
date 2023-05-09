@@ -15,5 +15,15 @@
 }
 
 #bio, #status, #email, #username, #preferredName, #age, #location, #userImage {
-    background-color: #f6e9fd;
+    background-color: #faf1ff;
+}
+
+#registrationQuote {
+    display: flex;
+    justify-content: center;
+}
+
+#registrationQuoteImage {
+    width: auto;
+    height: 80px;
 }

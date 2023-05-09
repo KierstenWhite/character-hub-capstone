@@ -2,10 +2,46 @@
     font-size: 109%;
 }
 
-#submit, #editProfileButton  {
+#submit {
     background-color: #DA96FF;
 }
 
-#profileDeleteButton {
-    background-color: #FF70CD;
+#personalityDetailsOne, #physicalDetailsOne {
+    align-items: end;
+}
+
+#characterHomePage {
+    margin: 35px;
+}
+
+#characterHomeHeader {
+    margin: 35px;
+}
+
+#cardContent {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#cardDescription {
+    padding: 10px;
+}
+
+#hubCardImage {
+    background-size: contain;
+    width: 275px;
+    height: 275px;
+}
+
+#individualCharacterCard {
+    background-color: #b8ffc7;
+    width: 275px;
+    height: 385px;
+}
+
+#hubCardProfileButton  {
+    background-color: #DA96FF;
+    color: black;
 }

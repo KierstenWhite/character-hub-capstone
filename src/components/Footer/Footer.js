@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
 
         <Segment id="footer">
-            <div class="socialbuttons">
+            <div className="socialbuttons">
             <Button id="socialbutton" circular color='facebook' icon='facebook' />
             <Button id="socialbutton" circular color='twitter' icon='twitter' />
             <Button id="socialbutton" circular color='linkedin' icon='linkedin' />

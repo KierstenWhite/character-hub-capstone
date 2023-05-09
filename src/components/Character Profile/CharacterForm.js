@@ -3,6 +3,8 @@ import './Character.css'
 import { useNavigate } from "react-router-dom";
 import { GetNewCharacterFormAndSend } from "./CharacterAPI";
 import { Button, Divider, Form, Header, Input, Segment, TextArea } from "semantic-ui-react";
+import { CharacterTraitRandomizer } from "./CharacterTraitRandomizer";
+import { ColorRandomizer } from "./ColorRandomizer";
 
 export const AddANewCharacterForm = () => {
     const [character, update] = useState({
@@ -300,8 +302,10 @@ export const AddANewCharacterForm = () => {
             <Header as="h3">
                     Physical Details
                 </Header>
-            <Form.Group widths="equal" id="physicalDetails">
+            <Form.Group id="physicalDetailsOne">
+            <Form.Field>{ColorRandomizer()}</Form.Field>
                 <Form.Field
+                width={4}
                 control={Input}
                 onChange={(evt) => {
                 const copy = { ...character};
@@ -313,6 +317,7 @@ export const AddANewCharacterForm = () => {
                 id="hairColor"
                 />
                 <Form.Field
+                width={4}
                 control={Input}
                 onChange={(evt) => {
                 const copy = { ...character};
@@ -323,6 +328,8 @@ export const AddANewCharacterForm = () => {
                 placeholder="Eye Color"
                 id="eyeColor"
                 />
+                </Form.Group>
+                <Form.Group widths="equal" id="physicalDetailsTwo">
                 <Form.Field
                 control={Input}
                 onChange={(evt) => {
@@ -371,8 +378,9 @@ export const AddANewCharacterForm = () => {
                 <Header as="h3">
                     Personality
                 </Header>
-            <Form.Group widths="equal" id="personalityDetails">
+            <Form.Group id="personalityDetailsOne">
                 <Form.Field
+                width={6}
                 control={Input}
                 onChange={(evt) => {
                 const copy = { ...character};
@@ -383,6 +391,9 @@ export const AddANewCharacterForm = () => {
                 placeholder="Character Traits"
                 id="characterTraits"
                 />
+                <Form.Field>{CharacterTraitRandomizer()}</Form.Field>
+                </Form.Group>
+                <Form.Group widths="equal" id="personalityDetails">
                 <Form.Field
                 control={Input}
                 onChange={(evt) => {

@@ -1,36 +1,23 @@
 import { Link } from "react-router-dom";
 import "./Character.css"
+import { Button, Card, Image, Reveal } from "semantic-ui-react"
+
 
 export const CharacterHomeList = ({ character, currentUser }) => {
-
+  
     return character.userId === currentUser.id ? (
       <>
-        <div className="ui special cards">
-          <div className="card" key={`character--${character.id}`}>
-            <div className="blurring dimmable image">
-              <div className="ui dimmer">
-                <div className="content">
-                  <div className="center">
-                    <div className="ui inverted button">See Profile</div>{" "} {/* Need to do a fetch so I can link to individual page */}
-                  </div>
-                </div>
-              </div>
-              <img className="ui image" src={character.characterImage}/>
-            </div>
-            <div className="content">
-              <a className="header">
-                {character.firstName} {character.lastName}
-              </a>
-              <div className="meta">
-                <span className="date">
-                  Created by {character.user.username} on {character.dateCreated}
-                  <Link to={`/characters/${character.id}`}><button className="ui button">See Profile</button></Link>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Card id="individualCharacterCard" key={`character==${character.id}`} color="green">
+              <Image src={character.characterImage} id="hubCardImage" alt="CardImage"/>
+            <Card.Content id="hubCardContent">
+              <Card.Header id="hubCardHeader">{character.firstName} {character.lastName}</Card.Header>
+                <Card.Description id="hubCardDescription">Created by {character.user.username}</Card.Description>
+                <Link to={`/characters/${character.id}`}><Button id="hubCardProfileButton">See Profile</Button></Link>
+            </Card.Content>
+          </Card>
       </>
     ) 
     : ("");
 }
+
+{/* <Button id="hubCardProfileButton">See Profile</Button> */}

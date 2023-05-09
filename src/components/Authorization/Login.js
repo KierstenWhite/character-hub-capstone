@@ -20,7 +20,7 @@ export const Login = () => {
                         id: user.id,
                     }))
 
-                    navigate("/home")
+                    navigate("/my_hub")
                 }
                 else {
                     window.alert("Invalid login")
@@ -31,20 +31,21 @@ export const Login = () => {
     return (
         <>
         <Segment id="headerSegment">
-        <img src="https://i.imgur.com/z7TY6qJ.png" alt="Character Hub Logo" id="characterHubLogo"/>
+        <img src="https://i.imgur.com/QoFHnAR.png" alt="Character Hub Logo" id="characterHubLogo"/>
         </Segment>
         <Header id="loginPageHeader" as="h1">
-            <Header.Subheader>
-            “Characters are not created by writers. They pre-exist and have to be found.” - Elizabeth Bowen
+            <Header.Subheader id="subheader">
+                <img src="https://i.imgur.com/FVdXWs7.png"/>
             </Header.Subheader>
         </Header>
-            <Form onSubmit={handleLogin}>
+            <Form id="loginForm" onSubmit={handleLogin}>
                 <Form.Field
                 control={Input}
                 onChange={evt => set(evt.target.value)}
-                label="Email"
-                placeholder="kierstenswhite@gmail.com"
-                required autoFocus />
+                class="form-control"
+                label="Enter Your Email"
+                placeholder="Email"
+                autoFocus />
             <Form.Field control={Button} id="loginButton">Login</Form.Field>
             <Link to="/register">Not a member yet?</Link>
             </Form>
