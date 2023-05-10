@@ -1,32 +1,19 @@
-#addNewCharacterForm {
-    font-size: 109%;
-}
+/*Handles CSS for Characters.js, */
 
-#submit {
-    background-color: #DA96FF;
-}
-
-#personalityDetailsOne, #physicalDetailsOne {
-    align-items: end;
+#characterHomeHeader {
+    margin: 35px;
 }
 
 #characterHomePage {
     margin: 35px;
 }
 
-#characterHomeHeader {
-    margin: 35px;
-}
+/*Handles CSS for CharacterHomeList.js*/
 
-#cardContent {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#cardDescription {
-    padding: 10px;
+#individualCharacterCard {
+    background-color: #b8ffc7;
+    width: 275px;
+    height: 385px;
 }
 
 #hubCardImage {
@@ -35,13 +22,7 @@
     height: 275px;
 }
 
-#individualCharacterCard {
-    background-color: #b8ffc7;
-    width: 275px;
-    height: 385px;
-}
-
-#hubCardProfileButton  {
+#hubCardProfileButton {
     background-color: #DA96FF;
     color: black;
 }

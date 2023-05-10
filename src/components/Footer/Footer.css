@@ -1,13 +1,27 @@
 #footer {
     background-color: white;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     height: 50px;
     width: 100%;
     margin-top: 40px;
 }
 
-.socialbuttons {
+#socials {
+    width: 144px;
+    height: 35px;
+
+}
+
+.socialLogo {
+    width: 35px;
+    height: 35px;
+    padding: 1px;
+}
+
+.footerSegments {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -1,0 +1,36 @@
+/*Handles CSS for CharacterForm.js & EditCharacterForm.js*/
+
+#addNewCharacterForm,
+#editCharacterForm {
+    font-size: 120%;
+}
+
+#personalityDetailsOne,
+#physicalDetailsOne {
+    align-items: end;
+}
+
+#submit {
+    background-color: #DA96FF;
+    color: black;
+    font-size: 15px;
+    margin: 5px 0 50px;
+}
+
+#randomTraitButton,
+#randomColorButton {
+    background-color: #b8ffc7;
+    color: black;
+    font-size: 15px;
+}
+
+#lineBreakOne {
+    background-color: #ff70cd;
+    height: 7px;
+    border: none;
+    opacity: 0.3;
+}
+
+#formTextHeader {
+    font-size: 40px;
+}

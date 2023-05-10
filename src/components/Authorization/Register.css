@@ -1,21 +1,32 @@
+/* CSS for New User Registration Page */
+
 .ui.form {
-    margin: 25px;
+    margin: 35px;
 }
 
 #registrationFormHeader {
-    margin: 25px;
+    margin: 35px;
 }
 
 #registrationForm {
-    font-size: 120%;
+    font-size: 110%;
 }
 
 #registrationButton {
     background-color: #DA96FF;
+    color: black;
+    font-size: 15px;
 }
 
-#bio, #status, #email, #username, #preferredName, #age, #location, #userImage {
-    background-color: #faf1ff;
+#bio,
+#status,
+#email,
+#username,
+#preferredName,
+#age,
+#location,
+#userImage {
+    background-color: #fcf7ff;
 }
 
 #registrationQuote {

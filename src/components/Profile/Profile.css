@@ -1,0 +1,58 @@
+/*CSS for IndividualCharacterProfile.js*/
+
+#editProfileHeader {
+    font-size: 50px;
+    margin: 25px;
+}
+
+#button {
+    background-color: #b8ffc7;
+    color: black;
+    font-size: 15px;
+    margin: 5px 0 75px;
+}
+
+#polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+#userProfileSidebar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffe561;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(221, 169, 0, 0.782);
+
+}
+
+#profileMainSegment {
+    margin: 10px;
+}
+
+#sidebarSegment,
+#profileMainSegment,
+#profileHeaderSegment {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#profileHeaderSegment {
+    padding: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+/*Accepts line breaks from form entries and prints them on the page*/
+#bioNarrative {
+    white-space: pre-line;
+}
+
+#fullGrid {
+    bottom: 15px;
+}

@@ -1,15 +1,22 @@
-#loginPageHeader, #headerSegment {
+/* CSS for Login Page */
+
+#loginPageHeader,
+#headerSegment {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#loginButton, #headerSegment {
+#loginButton,
+#headerSegment {
     background-color: #DA96FF;
 }
 
-#l
+#loginButton {
+    color: black;
+    font-size: 15px;
+}
 
 #loginForm {
     font-size: 120%;
