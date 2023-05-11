@@ -32,7 +32,7 @@ export const Login = () => {
             })
           );
 
-          navigate("/my_hub");
+          navigate("/");
         } else {
           window.alert("Invalid login");
         }

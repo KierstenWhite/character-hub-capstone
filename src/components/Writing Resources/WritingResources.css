@@ -1,0 +1,101 @@
+/*CSS for PermanentWritingResources.js*/
+
+#permanentResourcesCardGroup {
+    margin: 25px;
+    display: flex;   
+}
+
+#permanentResourcesHeader {
+    margin: 25px;
+    font-size: 50px;
+}
+
+#permanentResourcesSubHeader {
+    font-size: 20px;
+}
+
+#permanentResourceCardButton {
+    background-color: #FF70CD;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(231, 255, 240, 0.782);
+}
+
+#cardResourceContentOne {
+    background-color: #e3ffe9;
+}
+
+#cardResourceContentOneExtra {
+    background-color: #b8ffc7;
+}
+
+#fullCardResource {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(231, 255, 240, 0.782);
+}
+
+#subheaderDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submitNewResourceButton, #editWritingResourceButton, #submitWritingResourceButton {
+    background-color: #FF70CD;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(231, 255, 240, 0.782);
+}
+
+/*CSS for UserSubmittedWritingResources & UserSubmittedWritingResourcesCard.js*/
+
+#userSubmittedWritingResourcesList {
+    margin: 5px 0 75px 25px;
+    display: flex;   
+}
+
+#userSubmittedWritingResourcesHeader {
+    margin: 25px;
+    font-size: 30px;
+    bottom: 75px;
+}
+
+#UserSubmittedResourceCardButton {
+    background-color: #b8ffc7;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(231, 255, 240, 0.782);
+}
+
+#UserSubmittedResourceCardEditButton {
+    background-color: #FF70CD;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(231, 255, 240, 0.782);
+}
+
+#UserSubmittedResourceCardDeleteButton {
+    background-color: #b8ffc7;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(231, 255, 240, 0.782);
+}
+
+#cardResourceContentUserSubmitted {
+    background-color: #f4dfff;
+}
+
+#cardResourceContentExtraUserSubmitted {
+    background-color: #da96ff
+}
+
+#fullCardUserSubmittedResource {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(231, 255, 240, 0.782);
+}
+
+#editWritingResourceForm, #submitWritingResourceForm {
+    font-size: 110%;
+    margin: 50px;
+    
+}
+
+/* #ffe561 */

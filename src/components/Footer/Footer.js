@@ -13,28 +13,28 @@ export const Footer = () => {
         <a href="https://www.facebook.com" target="_blank">
           <img
             className="socialLogo"
-            src="https://i.imgur.com/4hR3mf2.png"
+            src="https://i.imgur.com/wpndJRy.png"
             alt="Facebook Logo"
           />
         </a>
         <a href="https://www.twitter.com" target="_blank">
           <img
             className="socialLogo"
-            src="https://i.imgur.com/amjYO7Q.png"
+            src="https://i.imgur.com/prPlxkm.png"
             alt="Twitter Logo"
           />
         </a>
         <a href="https://www.instagram.com" target="_blank">
           <img
             className="socialLogo"
-            src="https://i.imgur.com/pKG5aXo.png"
+            src="https://i.imgur.com/00elUiY.png"
             alt="Instagram Logo"
           />
         </a>
         <a href="https://www.pinterest.com" target="_blank">
           <img
             className="socialLogo"
-            src="https://i.imgur.com/wteUMPd.png"
+            src="https://i.imgur.com/g42ZBRF.png"
             alt="Pinterest Logo"
           />
         </a>

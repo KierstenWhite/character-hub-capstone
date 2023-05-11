@@ -10,7 +10,7 @@ export const NavBar = () => {
   return (
     <div>
       <Menu secondary id="navbar">
-        <img alt="logo" src="https://i.imgur.com/QoFHnAR.png" id="navBarLogo" />
+       <img alt="logo" src="https://i.imgur.com/QoFHnAR.png" id="navBarLogo" />
         <Menu.Item id="menuItem">
           <Link className="navbar_link" to="/">
             HOME

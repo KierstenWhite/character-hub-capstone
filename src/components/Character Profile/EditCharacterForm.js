@@ -191,7 +191,7 @@ export const EditCharacterForm = () => {
               copy.characterImage = evt.target.value;
               editCharacter(copy);
             }}
-            label="Character Image"
+            label="Character Image (Square images work best)"
             htmlFor="characterImage"
             value={character.characterImage}
             id="characterImage"

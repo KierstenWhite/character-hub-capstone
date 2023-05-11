@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Welcome to CharacterHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As a writer, it can be challenging to keep track of all the details you create for a character. CharacterHub makes tracking your characters easier than ever. The CharacterHub application allows users to create an account, add, edit, and delete characters they've specifically created. Users can edit their personal profile that includes a space for a bio and what they are currently working on. Additionally, users can explore writing resources provided by CharacterHub and other users. Writing Resource submissions can be edited and deleted by the user who created them.
 
-## Available Scripts
+# Resources
 
+I sued Semantic UI React and React Boostrap for styling. All images are linked through Imgur.
+
+This project was built with the following:
+
+*  [React](https://www.reactjs.org "React's Homepage")
+*  [React Bootstrap](https://react-bootstrap.github.io/ "Bootstrap Homepage")
+*  [Semantic UI](https://react.semantic-ui.com/ "Semantic UI React's HomePage")
+
+
+## Using this App
+
+Fork the directory from https://github.com/KierstenWhite/character-hub-capstone to your own local repository.
+
+You will need to install the following to run the program locally:
+
+
+```npm install
+npm install semantic-ui-react semantic-ui-css
+npm install react-select
+```
 In the project directory, you can run:
 
-### `npm start`
+```npm start```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Which runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser. The page will reload if you make edits.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You must also run the following command in a separate command prompt to initiate the database. These steps will let you run a json server with the database.json from the api directory, and allow all of the fetch calls in modules to interact with that data. 
+```cd api
+json-server database.json -p 8088 -w
+```
